@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+
+<head>
+    <title>لاویش - کیک و شیرینی</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/Icons/icon.ico">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="m-0 p-0" dir="rtl">
+    <div class="w-100 colorful-line"></div>
+    <div id="top-navbar">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="لاویش">
+                    <img src="images/icons/icon.png" alt="" style="max-height: 64px;">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-1 mx-2">
+                            <a class="nav-link active" aria-current="page" href="#" title="صفحه اصلی">
+                                <span class="fa fa-home fa-2x"></span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown px-1 mx-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" title="محصولات ما">
+                                <span class="fa fa-pie-chart fa-2x text-warning"></span>
+                            </a>
+                            <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">کیک</a></li>
+                                <li><a class="dropdown-item" href="#"> شیرینی</a></li>
+                                <li><a class="dropdown-item" href="#"> ...</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item px-1 mx-2">
+                            <a class="nav-link" href="#" title="تماس با ما">
+                                <span class="fa fa-phone fa-2x fa-rotate-270 text-success"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item px-1 mx-2">
+                            <a class="nav-link" href="#" title="درباره ما">
+                                <span class="fa fa fa-exclamation-circle fa-2x text-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item px-1 mx-2 ">
+                                <a class="nav-link" href="#" title="ورود/ ثبتنام ">
+                                    <span class="fa fa-sign-in fa-2x text-primary"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-1 mx-2 ">
+                                <a class="nav-link" href="#" title="خروج ">
+                                    <span class="fa fa-power-off fa-2x text-danger"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item px-1 mx-2 ">
+                                <a class="nav-link" href="#" title="سبد خرید">
+                                    <span class="fa fa-shopping-basket fa-2x text-success"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex">
+                        <form id="form-search" class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="جستجو..." aria-label="Search">
+                            <button class="btn btn-primary me-2" type="submit"> <span
+                                    class="fa fa-search fa-rotate-90"></span> </button>
+                        </form>
+                        <!-- <button id="btn-search" class="btn btn-outline-primary"><span
+                                class="fa fa-search fa-rotate-90"></span></button> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+</body>
+
 </html>
