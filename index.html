@@ -7,93 +7,287 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/Icons/icon.ico">
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/71dd11c301.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
-<body class="m-0 p-0" dir="rtl">
-    <div class="w-100 colorful-line"></div>
-    <div id="top-navbar">
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#" title="لاویش">
-                    <img src="images/icons/icon.png" alt="" style="max-height: 64px;">
-                </a>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-1 mx-2">
-                            <a class="nav-link active" aria-current="page" href="#" title="صفحه اصلی">
-                                <span class="fa fa-home fa-2x"></span>
+<body class="m-0 p-0 bg-light" dir="rtl">
+    <nav class="navbar navbar-default fixed-top navbar-expand-md navbar-light bg-white" id="first-top-fixed-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/Icons/lavish.png" alt="" id="colorful-lavish">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false" title="کیک">
+                            <span class="fas fa-cheese"></span>
+                            <span class="d-md-none d-lg-inline">کیک</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">کیک تولد</a></li>
+                            <li><a class="dropdown-item" href="#"> کیک شکلاتی</a></li>
+                            <li><a class="dropdown-item" href="#"> کیک هویج</a></li>
+                            <li><a class="dropdown-item" href="#"> کیک سفارشی</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false" title="شیرینی">
+                            <span class="fas fa-cookie"></span>
+                            <span class="d-md-none d-lg-inline">شیرینی</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">شیرینی عید نوروز</a></li>
+                            <li><a class="dropdown-item" href="#">شیرینی خشک</a></li>
+                            <li><a class="dropdown-item" href="#"> شیرینی خامه ای </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false" title="دسر">
+                            <span class="fas fa-ice-cream"></span>
+                            <span class="d-md-none d-lg-inline">دسر</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">دسر ساده</a></li>
+                            <li><a class="dropdown-item" href="#"> دسر ایرانی</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false" title="کیک سفارشی">
+                            <span class="fas fa-birthday-cake"></span>
+                            <span class="d-md-none d-lg-inline">کیک سفارشی</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">چاپ عکس روی کیک</a></li>
+                            <li><a class="dropdown-item" href="#"> سفارش مدل دلخواه</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#" title="تماس با ما">
+                                <span class="fa fa-phone fa-rotate-270 fa-lg"></span>
+                                <span class="d-md-none d-lg-inline">تماس با ما</span>
                             </a>
                         </li>
-
-                        <li class="nav-item dropdown px-1 mx-2">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" title="محصولات ما">
-                                <span class="fa fa-pie-chart fa-2x text-warning"></span>
-                            </a>
-                            <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">کیک</a></li>
-                                <li><a class="dropdown-item" href="#"> شیرینی</a></li>
-                                <li><a class="dropdown-item" href="#"> ...</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item px-1 mx-2">
-                            <a class="nav-link" href="#" title="تماس با ما">
-                                <span class="fa fa-phone fa-2x fa-rotate-270 text-success"></span>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#" title="درباره ما">
+                                <span class="fa fa fa-exclamation-circle fa-lg"></span>
+                                <span class="d-md-none d-lg-inline">درباره ما</span>
                             </a>
                         </li>
-                        <li class="nav-item px-1 mx-2">
-                            <a class="nav-link" href="#" title="درباره ما">
-                                <span class="fa fa fa-exclamation-circle fa-2x text-info"></span>
+                        <li class="nav-item  ">
+                            <a class="nav-link text-dark" href="#" title="ثبتنام ">
+                                <span class="fa fa-user-plus fa-lg text-primary"></span>
+                                <span class="d-md-none d-lg-inline">ثبت نام</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#" title="ورود ">
+                                <span class="fa fa-sign-in fa-lg text-primary"></span>
+                                <span class="d-md-none d-lg-inline">ورود</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link text-dark" href="#" title="حساب کاربری ">
+                                <span class="fa fa-user fa-lg  text-danger"></span>
+                                <span class="d-md-none d-lg-inline">حساب کاربری</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link text-dark" href="#" title="خروج ">
+                                <span class="fa fa-power-off fa-lg  text-danger"></span>
+                                <span class="d-md-none d-lg-inline">خروج</span>
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="fixed-top navbar-light bg-primary" id="second-top-fixed-navbar">
+        <div class="container-fluid p-1">
+            <div class="d-flex justify-content-center">
+                <a class="nav-link" href="#" title="سبد خرید">
+                    <span class="fa fa-shopping-basket fa-2x text-light"></span>
+                </a>
+                <form id="form-search" class="d-flex w-50">
+                    <input class="form-control me-2" type="search" placeholder="جستجو..." aria-label="Search">
+                    <button class="btn btn-light" type="submit"> <span class="fa fa-search fa-rotate-90"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" id="overall">
+        <div class="row content">
+            <div class="col-md-8" style="height: 500px; background-color: green;">
+                one
+            </div>
+            <div class="col-md-4 sidenav" style="height: 500px; background-color: yellow;">
+                two
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="vitrin" class="bg-white p-3">
+            <div class="d-flex  flex-row justify-content-around">
+                <p> ویترین امروز </p>
+                <p class=""> دوشنبه 27/شهریور/1399</p>
+            </div>
+            <div class="card-group" id="vitrin-card-group">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/customCake/download (1).jfif" class="card-img-top vitrin-img"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک شکلاتی</p>
 
-                    <div class="d-flex">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item px-1 mx-2 ">
-                                <a class="nav-link" href="#" title="ورود/ ثبتنام ">
-                                    <span class="fa fa-sign-in fa-2x text-primary"></span>
+                                <p class="card-text">
+                                <p class="small"> <span>2.3</span> کیلوگرم</p>
+                                <span>120000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
                                 </a>
-                            </li>
-                            <li class="nav-item px-1 mx-2 ">
-                                <a class="nav-link" href="#" title="خروج ">
-                                    <span class="fa fa-power-off fa-2x text-danger"></span>
-                                </a>
-                            </li>
-                            <li class="nav-item px-1 mx-2 ">
-                                <a class="nav-link" href="#" title="سبد خرید">
-                                    <span class="fa fa-shopping-basket fa-2x text-success"></span>
-                                </a>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <form id="form-search" class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="جستجو..." aria-label="Search">
-                            <button class="btn btn-primary me-2" type="submit"> <span
-                                    class="fa fa-search fa-rotate-90"></span> </button>
-                        </form>
-                        <!-- <button id="btn-search" class="btn btn-outline-primary"><span
-                                class="fa fa-search fa-rotate-90"></span></button> -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/ordinaryCake/download.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک خانگی</p>
+                                <p class="card-text">
+                                <p class="small"> <span>2</span> کیلوگرم</p>
+                                <span>100000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/pastry/images (1).jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک خیس</p>
+                                <p class="card-text">
+                                <p class="small"> <span>2.3</span> کیلوگرم</p>
+                                <span>120000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/ordinaryCake/download.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک شکلاتی</p>
+                                <p class="card-text">
+                                <p class="small"> <span>2.3</span> کیلوگرم</p>
+                                <span>120000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/customCake/download (1).jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک شکلاتی</p>
+                                <p class="card-text">
+                                <p class="small"> <span>2.3</span> کیلوگرم</p>
+                                <span>120000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/ordinaryCake/download.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک شکلاتی</p>
+                                <p class="card-text">
+                                <p class="small"> <span>2.3</span> کیلوگرم</p>
+                                <span>120000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/products/pastry/images (1).jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-title h5">کیک شکلاتی</p>
+                                <p class="card-text">
+                                <p class="small"> <span>2.3</span> کیلوگرم</p>
+                                <span>120000</span> تومان
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="nav-link" href="">
+                                    <small class="text-success"><span class="fa fa-plus"></span>
+                                        افزودن به سبد خرید</small>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-
+        </div>
     </div>
-
+    <footer class="container-fluid">
+        <p>Footer Text</p>
+    </footer>
 </body>
-
 </html>
